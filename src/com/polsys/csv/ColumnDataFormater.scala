@@ -2,20 +2,15 @@ package com.polsys.csv
 
 import java.text.SimpleDateFormat
 
+import org.apache.spark.sql.Dataset
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.SQLContext
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.StructType
-import org.apache.spark.sql.types.LongType
-import org.apache.spark.sql.types.StructField
-import org.apache.spark.sql.types.StringType
 import org.apache.spark.sql.SaveMode
-import org.apache.spark.sql.DataFrameReader
-import org.apache.spark.sql.Dataset
+import org.apache.spark.sql.SparkSession
 
 
 
-object MainObject {
+object ColumnDataFormater {
 	def main(args:Array[String]){
 		    
 	      val sparksess=getSparkSession()
